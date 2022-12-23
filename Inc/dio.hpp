@@ -9,12 +9,16 @@
 #define DIO_HPP_
 
 #include "driver.hpp"
+
+
+
 class Pin{
 public:
 	Pin(){;};
 };
+
 class Port{
-	const unsigned char DataPortWidth = 32;
+	constexpr static unsigned char DataPortWidth = 32;
 	Pin data[DataPortWidth];
 public:
 	Port(){;};
