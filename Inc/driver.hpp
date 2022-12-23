@@ -7,7 +7,7 @@
 
 #ifndef DRIVER_HPP_
 #define DRIVER_HPP_
-
+#include "stm32h750xx.h"
 class Driver{
 public:
 	virtual void Setup(void)=0;
