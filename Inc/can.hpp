@@ -7,8 +7,8 @@
 
 #ifndef CAN_HPP_
 #define CAN_HPP_
-#include "driver.hpp"
-class Can: public Driver{
+#include <device.hpp>
+class Can: public Device{
 public:
 	Can(void){;};
 	void Setup(void){;};

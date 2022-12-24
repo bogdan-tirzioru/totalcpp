@@ -5,14 +5,14 @@
  *      Author: ghita
  */
 
-#ifndef DRIVER_HPP_
-#define DRIVER_HPP_
+#ifndef DEVICE_HPP_
+#define DEVICE_HPP_
 #include "stm32h750xx.h"
-class Driver{
+class Device{
 public:
 	virtual void Setup(void)=0;
 };
 
 
 
-#endif /* DRIVER_HPP_ */
+#endif /* DEVICE_HPP_ */

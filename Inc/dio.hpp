@@ -8,35 +8,46 @@
 #ifndef DIO_HPP_
 #define DIO_HPP_
 
-#include "driver.hpp"
+#include <device.hpp>
 
 
 
-class Pin{
+enum class PortName{ PA, PB};
+
+class Pin: public Device{
 public:
 	Pin(){;};
+	void Setup(void)
+	{
+
+	}
 };
 
-class Port{
+class Port: public Device{
 	constexpr static unsigned char DataPortWidth = 32;
 	Pin data[DataPortWidth];
+	GPIO_TypeDef *reg ;
 public:
-	Port(){;};
+	Port(GPIO_TypeDef *p){reg = p;};
+	void Setup(void)
+	{
+		for( auto iter:data)
+		{
+			iter.Setup();
+		}
+	}
 };
 
-class Dio:public Driver{
+
+class Dio:public Device{
 	bool value=false;
-	Port PA;
-	Port PB;
-	Port PC;
-	Port PD;
-	Port PE;
-	Port PF;
-	Port PG;
+
+	Port list[2] = {Port{GPIOA},Port{GPIOB}};
+public:
 
 public:
 	Dio(void){;};
-	void Toggle(void){value= !value;};
+	void Toggle(PortName pm,unsigned char nrpin){value= !value;};
 	void Setup(void){;};
 };
 

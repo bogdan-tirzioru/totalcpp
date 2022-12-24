@@ -15,15 +15,12 @@
  *
  ******************************************************************************
  */
-
+#include <device.hpp>
 #include <stdint.h>
-#include "driver.hpp"
 #include "dio.hpp"
 #include "timer.hpp"
 #include "can.hpp"
-#if !defined(__SOFT_FP__) && defined(__ARM_FP)
-  #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
-#endif
+using portname;
 
 int main(void)
 {
@@ -31,15 +28,15 @@ int main(void)
 	Dio *dio =new Dio{};
 	Can *can1 = new Can{};
 	Timer *timeros = new Timer{};
-	Driver * pDriver[]={ dynamic_cast<Driver *>(dio),
-			dynamic_cast<Driver *>(timeros),
-			dynamic_cast<Driver *>(can1)};
+	Device * pDriver[]={ dynamic_cast<Device *>(dio),
+			dynamic_cast<Device *>(timeros),
+			dynamic_cast<Device *>(can1)};
 	for(auto &iter:pDriver)
 	{
 		iter->Setup();
 	}
 	for(;;)
 		{
-			dio->Toggle();
+			dio->Toggle(PB,0);
 		};
 }
