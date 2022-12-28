@@ -18,10 +18,10 @@
 ../Inc/can.hpp:14:15:virtual void Can::Setup()	16	static
 ../Inc/can.hpp:15:10:Can::~Can()	16	static
 ../Inc/can.hpp:15:10:virtual Can::~Can()	16	static
-../Inc/rcc.hpp:17:2:Rcc::Rcc(TypeRccSource, long unsigned int)	24	static
-../Inc/rcc.hpp:22:15:virtual void Rcc::Setup()	16	static
-../Inc/rcc.hpp:26:10:Rcc::~Rcc()	16	static
-../Inc/rcc.hpp:26:10:virtual Rcc::~Rcc()	16	static
+../Inc/rcc.hpp:18:2:Rcc::Rcc(TypeRccSource, long unsigned int)	24	static
+../Inc/rcc.hpp:23:15:virtual void Rcc::Setup()	16	static
+../Inc/rcc.hpp:39:10:Rcc::~Rcc()	16	static
+../Inc/rcc.hpp:39:10:virtual Rcc::~Rcc()	16	static
 ../Inc/App.hpp:27:2:App::App()	40	static
 ../Inc/App.hpp:41:7:void App::Loop()	16	static
 ../Inc/App.hpp:45:10:App::~App()	16	static
