@@ -19,7 +19,7 @@ public:
 	Pin(){;};
 	void Setup(void)
 	{
-
+		// do something
 	}
 };
 

@@ -123,7 +123,7 @@ public:
  8000320:	af00      	add	r7, sp, #0
  8000322:	6078      	str	r0, [r7, #4]
 	{
-
+		// do something
 	}
  8000324:	bf00      	nop
  8000326:	370c      	adds	r7, #12
