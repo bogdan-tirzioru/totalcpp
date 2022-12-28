@@ -26,4 +26,5 @@ int main(void)
 			app->Loop();
 
 		};
+	delete app;
 }

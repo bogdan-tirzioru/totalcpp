@@ -29,7 +29,7 @@ class Port: public Device{
 	GPIO_TypeDef *reg ;
 public:
 	Port(GPIO_TypeDef *p){reg = p;};
-	void Setup(void)
+	virtual void Setup(void)
 	{
 		for( auto iter:data)
 		{

@@ -11,7 +11,7 @@
 class Timer: public Device{
 public:
 	Timer(void){;};
-	void Setup(void){;};
+	virtual void Setup(void){;};
 	virtual ~Timer(void){;};
 };
 

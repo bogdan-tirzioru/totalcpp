@@ -11,7 +11,7 @@
 class Can: public Device{
 public:
 	Can(void){;};
-	void Setup(void){;};
+	virtual void Setup(void){;};
 	virtual ~Can(void)
 	{
 

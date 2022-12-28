@@ -4,22 +4,26 @@
 ../Inc/dio.hpp:31:2:Port::Port(GPIO_TypeDef*)	24	static
 ../Inc/device.hpp:11:7:constexpr Device::Device(const Device&)	16	static
 ../Inc/dio.hpp:17:7:constexpr Pin::Pin(const Pin&)	16	static
-../Inc/dio.hpp:32:7:virtual void Port::Setup()	32	static
+../Inc/dio.hpp:32:15:virtual void Port::Setup()	32	static
 ../Inc/dio.hpp:49:2:Dio::Dio()	16	static
 ../Inc/dio.hpp:50:7:void Dio::Toggle(PortName, unsigned char)	24	static
 ../Inc/dio.hpp:51:7:virtual void Dio::Setup()	16	static
 ../Inc/dio.hpp:52:10:Dio::~Dio()	16	static
 ../Inc/dio.hpp:52:10:virtual Dio::~Dio()	16	static
 ../Inc/timer.hpp:13:2:Timer::Timer()	16	static
-../Inc/timer.hpp:14:7:virtual void Timer::Setup()	16	static
+../Inc/timer.hpp:14:15:virtual void Timer::Setup()	16	static
 ../Inc/timer.hpp:15:10:Timer::~Timer()	16	static
 ../Inc/timer.hpp:15:10:virtual Timer::~Timer()	16	static
 ../Inc/can.hpp:13:2:Can::Can()	16	static
-../Inc/can.hpp:14:7:virtual void Can::Setup()	16	static
+../Inc/can.hpp:14:15:virtual void Can::Setup()	16	static
 ../Inc/can.hpp:15:10:Can::~Can()	16	static
 ../Inc/can.hpp:15:10:virtual Can::~Can()	16	static
-../Inc/App.hpp:25:2:App::App()	40	static
-../Inc/App.hpp:37:7:void App::Loop()	16	static
-../Inc/App.hpp:41:10:App::~App()	16	static
-../Inc/App.hpp:41:10:virtual App::~App()	16	static
+../Inc/rcc.hpp:17:2:Rcc::Rcc(TypeRccSource, long unsigned int)	24	static
+../Inc/rcc.hpp:22:15:virtual void Rcc::Setup()	16	static
+../Inc/rcc.hpp:26:10:Rcc::~Rcc()	16	static
+../Inc/rcc.hpp:26:10:virtual Rcc::~Rcc()	16	static
+../Inc/App.hpp:27:2:App::App()	40	static
+../Inc/App.hpp:41:7:void App::Loop()	16	static
+../Inc/App.hpp:45:10:App::~App()	16	static
+../Inc/App.hpp:45:10:virtual App::~App()	16	static
 ../Src/main.cpp:20:5:int main()	24	static
