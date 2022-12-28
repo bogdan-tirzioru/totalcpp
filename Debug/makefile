@@ -74,8 +74,8 @@ all: main-build
 main-build: totalcpp.elf secondary-outputs
 
 # Tool invocations
-totalcpp.elf totalcpp.map: $(OBJS) $(USER_OBJS) /home/ghita/gitrepo/totalcpp/STM32H750VBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "totalcpp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/ghita/gitrepo/totalcpp/STM32H750VBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="totalcpp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+totalcpp.elf totalcpp.map: $(OBJS) $(USER_OBJS) /home/ghita/STM32CubeIDE/workspace_1.11.0/totalcpp/STM32H750VBTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "totalcpp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/home/ghita/STM32CubeIDE/workspace_1.11.0/totalcpp/STM32H750VBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="totalcpp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

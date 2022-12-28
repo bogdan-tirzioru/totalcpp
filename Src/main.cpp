@@ -20,7 +20,6 @@
 #include "dio.hpp"
 #include "timer.hpp"
 #include "can.hpp"
-using portname;
 
 int main(void)
 {
@@ -37,6 +36,6 @@ int main(void)
 	}
 	for(;;)
 		{
-			dio->Toggle(PB,0);
+			dio->Toggle(PortName::PB,0);
 		};
 }
