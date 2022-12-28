@@ -1,3 +1,4 @@
+"./Src/App.o"
 "./Src/dio.o"
 "./Src/main.o"
 "./Src/syscalls.o"

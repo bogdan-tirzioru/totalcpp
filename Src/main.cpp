@@ -15,27 +15,15 @@
  *
  ******************************************************************************
  */
-#include <device.hpp>
-#include <stdint.h>
-#include "dio.hpp"
-#include "timer.hpp"
-#include "can.hpp"
+#include "App.hpp"
 
 int main(void)
 {
-    /* Loop forever */
-	Dio *dio =new Dio{};
-	Can *can1 = new Can{};
-	Timer *timeros = new Timer{};
-	Device * pDriver[]={ dynamic_cast<Device *>(dio),
-			dynamic_cast<Device *>(timeros),
-			dynamic_cast<Device *>(can1)};
-	for(auto &iter:pDriver)
-	{
-		iter->Setup();
-	}
+    App *app= new App{};
+	/* Loop forever */
 	for(;;)
 		{
-			dio->Toggle(PortName::PB,0);
+			app->Loop();
+
 		};
 }

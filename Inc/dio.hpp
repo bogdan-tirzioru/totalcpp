@@ -49,6 +49,10 @@ public:
 	Dio(void){;};
 	void Toggle(PortName pm,unsigned char nrpin){value= !value;};
 	void Setup(void){;};
+	virtual ~Dio(void)
+	{
+
+	}
 };
 
 
