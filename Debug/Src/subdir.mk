@@ -11,7 +11,8 @@ C_SRCS += \
 CPP_SRCS += \
 ../Src/App.cpp \
 ../Src/dio.cpp \
-../Src/main.cpp 
+../Src/main.cpp \
+../Src/rcc.cpp 
 
 C_DEPS += \
 ./Src/syscalls.d \
@@ -21,13 +22,15 @@ OBJS += \
 ./Src/App.o \
 ./Src/dio.o \
 ./Src/main.o \
+./Src/rcc.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o 
 
 CPP_DEPS += \
 ./Src/App.d \
 ./Src/dio.d \
-./Src/main.d 
+./Src/main.d \
+./Src/rcc.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -39,7 +42,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/App.d ./Src/App.o ./Src/App.su ./Src/dio.d ./Src/dio.o ./Src/dio.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
+	-$(RM) ./Src/App.d ./Src/App.o ./Src/App.su ./Src/dio.d ./Src/dio.o ./Src/dio.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/rcc.d ./Src/rcc.o ./Src/rcc.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su
 
 .PHONY: clean-Src
 

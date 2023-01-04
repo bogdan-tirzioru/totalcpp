@@ -1,0 +1,3 @@
+../Inc/rcc.hpp:24:10:Rcc::~Rcc()	16	static
+../Inc/rcc.hpp:24:10:virtual Rcc::~Rcc()	16	static
+../Src/rcc.cpp:9:6:virtual void Rcc::Setup()	16	static

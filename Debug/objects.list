@@ -1,6 +1,7 @@
 "./Src/App.o"
 "./Src/dio.o"
 "./Src/main.o"
+"./Src/rcc.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"
 "./Startup/startup_stm32h750vbtx.o"
