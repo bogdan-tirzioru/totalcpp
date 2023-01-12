@@ -37,9 +37,9 @@ void Rcc::Setup(void)
 	reg->PLLCFGR |= RCC_PLLCFGR_DIVQ1EN;
 	reg->PLLCFGR |= RCC_PLLCFGR_DIVR1EN;
 
-	/*set multiplier to 60*/
+	/*set multiplier to 50 -> 400Mhz output*/
 	reg->PLL1DIVR &= ~RCC_PLL1DIVR_N1;
-	reg->PLL1DIVR |= (60-1) <<RCC_PLL1DIVR_N1_Pos;
+	reg->PLL1DIVR |= (50-1) <<RCC_PLL1DIVR_N1_Pos;
 
 	reg->PLL1DIVR &= ~RCC_PLL1DIVR_P1;
 	reg->PLL1DIVR &= ~RCC_PLL1DIVR_Q1;
@@ -48,7 +48,7 @@ void Rcc::Setup(void)
 	reg->CR |= RCC_CR_PLL1ON;
 	while ((reg->CR & RCC_CR_PLL1RDY) != RCC_CR_PLL1RDY);
 
-	/*select cpu to 480Mhz*/
+	/*select cpu to clock from PLL1*/
 	reg->CFGR |= RCC_CFGR_SW_PLL1 << RCC_CFGR_SW_Pos;
 
 }

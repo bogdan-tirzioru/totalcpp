@@ -937,7 +937,7 @@ void Rcc::Setup(void)
  8000884:	f442 2280 	orr.w	r2, r2, #262144	; 0x40000
  8000888:	62da      	str	r2, [r3, #44]	; 0x2c
 
-	/*set multiplier to 60*/
+	/*set multiplier to 50 -> 400Mhz output*/
 	reg->PLL1DIVR &= ~RCC_PLL1DIVR_N1;
  800088a:	687b      	ldr	r3, [r7, #4]
  800088c:	685b      	ldr	r3, [r3, #4]
@@ -947,13 +947,13 @@ void Rcc::Setup(void)
  8000894:	4b23      	ldr	r3, [pc, #140]	; (8000924 <_ZN3Rcc5SetupEv+0x164>)
  8000896:	400b      	ands	r3, r1
  8000898:	6313      	str	r3, [r2, #48]	; 0x30
-	reg->PLL1DIVR |= (60-1) <<RCC_PLL1DIVR_N1_Pos;
+	reg->PLL1DIVR |= (50-1) <<RCC_PLL1DIVR_N1_Pos;
  800089a:	687b      	ldr	r3, [r7, #4]
  800089c:	685b      	ldr	r3, [r3, #4]
  800089e:	6b1a      	ldr	r2, [r3, #48]	; 0x30
  80008a0:	687b      	ldr	r3, [r7, #4]
  80008a2:	685b      	ldr	r3, [r3, #4]
- 80008a4:	f042 023b 	orr.w	r2, r2, #59	; 0x3b
+ 80008a4:	f042 0231 	orr.w	r2, r2, #49	; 0x31
  80008a8:	631a      	str	r2, [r3, #48]	; 0x30
 
 	reg->PLL1DIVR &= ~RCC_PLL1DIVR_P1;
@@ -1003,7 +1003,7 @@ void Rcc::Setup(void)
  8000902:	d000      	beq.n	8000906 <_ZN3Rcc5SetupEv+0x146>
  8000904:	e7f1      	b.n	80008ea <_ZN3Rcc5SetupEv+0x12a>
 
-	/*select cpu to 480Mhz*/
+	/*select cpu to clock from PLL1*/
 	reg->CFGR |= RCC_CFGR_SW_PLL1 << RCC_CFGR_SW_Pos;
  8000906:	687b      	ldr	r3, [r7, #4]
  8000908:	685b      	ldr	r3, [r3, #4]
