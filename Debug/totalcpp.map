@@ -575,7 +575,7 @@ LOAD /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000298                . = ALIGN (0x4)
 
-.text           0x0000000008000298      0xb18
+.text           0x0000000008000298      0xb8c
                 0x0000000008000298                . = ALIGN (0x4)
  *(.text)
  .text          0x0000000008000298       0x40 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
@@ -682,324 +682,324 @@ LOAD /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x00000000080007a0       0x20 ./Src/rcc.o
                 0x00000000080007a0                Rcc::~Rcc()
  .text._ZN3Rcc5SetupEv
-                0x00000000080007c0      0x168 ./Src/rcc.o
+                0x00000000080007c0      0x1dc ./Src/rcc.o
                 0x00000000080007c0                Rcc::Setup()
- .text._getpid  0x0000000008000928       0x10 ./Src/syscalls.o
-                0x0000000008000928                _getpid
- .text._kill    0x0000000008000938       0x20 ./Src/syscalls.o
-                0x0000000008000938                _kill
- .text._exit    0x0000000008000958       0x14 ./Src/syscalls.o
-                0x0000000008000958                _exit
- .text._sbrk    0x000000000800096c       0x6c ./Src/sysmem.o
-                0x000000000800096c                _sbrk
+ .text._getpid  0x000000000800099c       0x10 ./Src/syscalls.o
+                0x000000000800099c                _getpid
+ .text._kill    0x00000000080009ac       0x20 ./Src/syscalls.o
+                0x00000000080009ac                _kill
+ .text._exit    0x00000000080009cc       0x14 ./Src/syscalls.o
+                0x00000000080009cc                _exit
+ .text._sbrk    0x00000000080009e0       0x6c ./Src/sysmem.o
+                0x00000000080009e0                _sbrk
  .text.Reset_Handler
-                0x00000000080009d8       0x50 ./Startup/startup_stm32h750vbtx.o
-                0x00000000080009d8                Reset_Handler
+                0x0000000008000a4c       0x50 ./Startup/startup_stm32h750vbtx.o
+                0x0000000008000a4c                Reset_Handler
  .text.Default_Handler
-                0x0000000008000a28        0x2 ./Startup/startup_stm32h750vbtx.o
-                0x0000000008000a28                HASH_RNG_IRQHandler
-                0x0000000008000a28                EXTI2_IRQHandler
-                0x0000000008000a28                TIM8_CC_IRQHandler
-                0x0000000008000a28                DMA_STR2_IRQHandler
-                0x0000000008000a28                DebugMon_Handler
-                0x0000000008000a28                UART8_IRQHandler
-                0x0000000008000a28                SPI4_IRQHandler
-                0x0000000008000a28                HRTIM1_MST_IRQHandler
-                0x0000000008000a28                HardFault_Handler
-                0x0000000008000a28                DMA_STR5_IRQHandler
-                0x0000000008000a28                HRTIM1_FLT_IRQHandler
-                0x0000000008000a28                JPEG_IRQHandler
-                0x0000000008000a28                SysTick_Handler
-                0x0000000008000a28                DMA2_STR1_IRQHandler
-                0x0000000008000a28                DMA2_STR5_IRQHandler
-                0x0000000008000a28                HRTIM1_TIMD_IRQHandler
-                0x0000000008000a28                PendSV_Handler
-                0x0000000008000a28                NMI_Handler
-                0x0000000008000a28                EXTI3_IRQHandler
-                0x0000000008000a28                LPTIM4_IRQHandler
-                0x0000000008000a28                TIM8_TRG_COM_TIM14_IRQHandler
-                0x0000000008000a28                LPTIM2_IRQHandler
-                0x0000000008000a28                DFSDM1_FLT1_IRQHandler
-                0x0000000008000a28                DMAMUX2_OVR_IRQHandler
-                0x0000000008000a28                TIM8_UP_TIM13_IRQHandler
-                0x0000000008000a28                I2C3_ER_IRQHandler
-                0x0000000008000a28                DFSDM1_FLT2_IRQHandler
-                0x0000000008000a28                MDMA_IRQHandler
-                0x0000000008000a28                LPTIM3_IRQHandler
-                0x0000000008000a28                EXTI0_IRQHandler
-                0x0000000008000a28                I2C2_EV_IRQHandler
-                0x0000000008000a28                FPU_IRQHandler
-                0x0000000008000a28                DMA_STR1_IRQHandler
-                0x0000000008000a28                OTG_HS_WKUP_IRQHandler
-                0x0000000008000a28                FDCAN1_IT1_IRQHandler
-                0x0000000008000a28                UsageFault_Handler
-                0x0000000008000a28                LTDC_ER_IRQHandler
-                0x0000000008000a28                ADC1_2_IRQHandler
-                0x0000000008000a28                SPI1_IRQHandler
-                0x0000000008000a28                BDMA_CH2_IRQHandler
-                0x0000000008000a28                TIM6_DAC_IRQHandler
-                0x0000000008000a28                DCMI_IRQHandler
-                0x0000000008000a28                HRTIM1_TIMC_IRQHandler
-                0x0000000008000a28                SDMMC_IRQHandler
-                0x0000000008000a28                RTC_ALARM_IRQHandler
-                0x0000000008000a28                DMA_STR0_IRQHandler
-                0x0000000008000a28                SAI2_IRQHandler
-                0x0000000008000a28                DMA2_STR3_IRQHandler
-                0x0000000008000a28                DFSDM1_FLT3_IRQHandler
-                0x0000000008000a28                USART6_IRQHandler
-                0x0000000008000a28                BDMA_CH5_IRQHandler
-                0x0000000008000a28                TIM17_IRQHandler
-                0x0000000008000a28                BDMA_CH6_IRQHandler
-                0x0000000008000a28                USART3_IRQHandler
-                0x0000000008000a28                WKUP_IRQHandler
-                0x0000000008000a28                CRYP_IRQHandler
-                0x0000000008000a28                BDMA_CH3_IRQHandler
-                0x0000000008000a28                LPTIM5_IRQHandler
-                0x0000000008000a28                LPUART_IRQHandler
-                0x0000000008000a28                UART5_IRQHandler
-                0x0000000008000a28                ADC3_IRQHandler
-                0x0000000008000a28                DMA_STR6_IRQHandler
-                0x0000000008000a28                TIM4_IRQHandler
-                0x0000000008000a28                QUADSPI_IRQHandler
-                0x0000000008000a28                I2C1_EV_IRQHandler
-                0x0000000008000a28                DMA1_STR7_IRQHandler
-                0x0000000008000a28                TIM16_IRQHandler
-                0x0000000008000a28                UART4_IRQHandler
-                0x0000000008000a28                TIM3_IRQHandler
-                0x0000000008000a28                RCC_IRQHandler
-                0x0000000008000a28                TIM8_BRK_TIM12_IRQHandler
-                0x0000000008000a28                TIM1_TRG_COM_IRQHandler
-                0x0000000008000a28                Default_Handler
-                0x0000000008000a28                HRTIM_TIMB_IRQHandler
-                0x0000000008000a28                CEC_IRQHandler
-                0x0000000008000a28                EXTI15_10_IRQHandler
-                0x0000000008000a28                BDMA_CH4_IRQHandler
-                0x0000000008000a28                DMA_STR3_IRQHandler
-                0x0000000008000a28                HRTIM_TIME_IRQHandler
-                0x0000000008000a28                HRTIM1_TIMA_IRQHandler
-                0x0000000008000a28                SPI5_IRQHandler
-                0x0000000008000a28                TIM7_IRQHandler
-                0x0000000008000a28                SDMMC1_IRQHandler
-                0x0000000008000a28                TIM5_IRQHandler
-                0x0000000008000a28                SPDIF_IRQHandler
-                0x0000000008000a28                TIM15_IRQHandler
-                0x0000000008000a28                I2C3_EV_IRQHandler
-                0x0000000008000a28                WWDG1_RST_IRQHandler
-                0x0000000008000a28                EXTI9_5_IRQHandler
-                0x0000000008000a28                DMA2_STR4_IRQHandler
-                0x0000000008000a28                RTC_WKUP_IRQHandler
-                0x0000000008000a28                DMA2_STR6_IRQHandler
-                0x0000000008000a28                LTDC_IRQHandler
-                0x0000000008000a28                SAI3_IRQHandler
-                0x0000000008000a28                ETH_WKUP_IRQHandler
-                0x0000000008000a28                PVD_PVM_IRQHandler
-                0x0000000008000a28                SPI2_IRQHandler
-                0x0000000008000a28                OTG_HS_EP1_IN_IRQHandler
-                0x0000000008000a28                MemManage_Handler
-                0x0000000008000a28                DMA2_STR0_IRQHandler
-                0x0000000008000a28                SVC_Handler
-                0x0000000008000a28                CRS_IRQHandler
-                0x0000000008000a28                EXTI4_IRQHandler
-                0x0000000008000a28                DMAMUX1_OV_IRQHandler
-                0x0000000008000a28                FDCAN2_IT1_IRQHandler
-                0x0000000008000a28                DMA_STR4_IRQHandler
-                0x0000000008000a28                COMP_IRQHandler
-                0x0000000008000a28                DMA2_STR2_IRQHandler
-                0x0000000008000a28                ETH_IRQHandler
-                0x0000000008000a28                TIM1_UP_IRQHandler
-                0x0000000008000a28                DMA2_STR7_IRQHandler
-                0x0000000008000a28                OTG_HS_EP1_OUT_IRQHandler
-                0x0000000008000a28                SPI6_IRQHandler
-                0x0000000008000a28                MDIOS_IRQHandler
-                0x0000000008000a28                I2C4_EV_IRQHandler
-                0x0000000008000a28                FDCAN2_IT0_IRQHandler
-                0x0000000008000a28                BDMA_CH7_IRQHandler
-                0x0000000008000a28                FDCAN1_IT0_IRQHandler
-                0x0000000008000a28                TIM2_IRQHandler
-                0x0000000008000a28                HSEM0_IRQHandler
-                0x0000000008000a28                OTG_FS_WKUP_IRQHandler
-                0x0000000008000a28                OTG_HS_IRQHandler
-                0x0000000008000a28                DMA2D_IRQHandler
-                0x0000000008000a28                TIM1_BRK_IRQHandler
-                0x0000000008000a28                EXTI1_IRQHandler
-                0x0000000008000a28                OTG_FS_EP1_OUT_IRQHandler
-                0x0000000008000a28                UART7_IRQHandler
-                0x0000000008000a28                MDIOS_WKUP_IRQHandler
-                0x0000000008000a28                USART2_IRQHandler
-                0x0000000008000a28                DFSDM1_FLT0_IRQHandler
-                0x0000000008000a28                SAI4_IRQHandler
-                0x0000000008000a28                I2C2_ER_IRQHandler
-                0x0000000008000a28                FLASH_IRQHandler
-                0x0000000008000a28                WWDG1_IRQHandler
-                0x0000000008000a28                BusFault_Handler
-                0x0000000008000a28                USART1_IRQHandler
-                0x0000000008000a28                OTG_FS_IRQHandler
-                0x0000000008000a28                SPI3_IRQHandler
-                0x0000000008000a28                OTG_FS_EP1_IN_IRQHandler
-                0x0000000008000a28                I2C1_ER_IRQHandler
-                0x0000000008000a28                FMC_IRQHandler
-                0x0000000008000a28                BDMA_CH1_IRQHandler
-                0x0000000008000a28                SWPMI1_IRQHandler
-                0x0000000008000a28                LPTIM1_IRQHandler
-                0x0000000008000a28                BDMA_CH8_IRQHandler
-                0x0000000008000a28                TIM_CC_IRQHandler
-                0x0000000008000a28                I2C4_ER_IRQHandler
-                0x0000000008000a28                SAI1_IRQHandler
-                0x0000000008000a28                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
- .text._ZdlPvj  0x0000000008000a2a        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(del_ops.o)
-                0x0000000008000a2a                operator delete(void*, unsigned int)
- .text._Znwj    0x0000000008000a2e       0x22 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(new_op.o)
-                0x0000000008000a2e                operator new(unsigned int)
+                0x0000000008000a9c        0x2 ./Startup/startup_stm32h750vbtx.o
+                0x0000000008000a9c                HASH_RNG_IRQHandler
+                0x0000000008000a9c                EXTI2_IRQHandler
+                0x0000000008000a9c                TIM8_CC_IRQHandler
+                0x0000000008000a9c                DMA_STR2_IRQHandler
+                0x0000000008000a9c                DebugMon_Handler
+                0x0000000008000a9c                UART8_IRQHandler
+                0x0000000008000a9c                SPI4_IRQHandler
+                0x0000000008000a9c                HRTIM1_MST_IRQHandler
+                0x0000000008000a9c                HardFault_Handler
+                0x0000000008000a9c                DMA_STR5_IRQHandler
+                0x0000000008000a9c                HRTIM1_FLT_IRQHandler
+                0x0000000008000a9c                JPEG_IRQHandler
+                0x0000000008000a9c                SysTick_Handler
+                0x0000000008000a9c                DMA2_STR1_IRQHandler
+                0x0000000008000a9c                DMA2_STR5_IRQHandler
+                0x0000000008000a9c                HRTIM1_TIMD_IRQHandler
+                0x0000000008000a9c                PendSV_Handler
+                0x0000000008000a9c                NMI_Handler
+                0x0000000008000a9c                EXTI3_IRQHandler
+                0x0000000008000a9c                LPTIM4_IRQHandler
+                0x0000000008000a9c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0000000008000a9c                LPTIM2_IRQHandler
+                0x0000000008000a9c                DFSDM1_FLT1_IRQHandler
+                0x0000000008000a9c                DMAMUX2_OVR_IRQHandler
+                0x0000000008000a9c                TIM8_UP_TIM13_IRQHandler
+                0x0000000008000a9c                I2C3_ER_IRQHandler
+                0x0000000008000a9c                DFSDM1_FLT2_IRQHandler
+                0x0000000008000a9c                MDMA_IRQHandler
+                0x0000000008000a9c                LPTIM3_IRQHandler
+                0x0000000008000a9c                EXTI0_IRQHandler
+                0x0000000008000a9c                I2C2_EV_IRQHandler
+                0x0000000008000a9c                FPU_IRQHandler
+                0x0000000008000a9c                DMA_STR1_IRQHandler
+                0x0000000008000a9c                OTG_HS_WKUP_IRQHandler
+                0x0000000008000a9c                FDCAN1_IT1_IRQHandler
+                0x0000000008000a9c                UsageFault_Handler
+                0x0000000008000a9c                LTDC_ER_IRQHandler
+                0x0000000008000a9c                ADC1_2_IRQHandler
+                0x0000000008000a9c                SPI1_IRQHandler
+                0x0000000008000a9c                BDMA_CH2_IRQHandler
+                0x0000000008000a9c                TIM6_DAC_IRQHandler
+                0x0000000008000a9c                DCMI_IRQHandler
+                0x0000000008000a9c                HRTIM1_TIMC_IRQHandler
+                0x0000000008000a9c                SDMMC_IRQHandler
+                0x0000000008000a9c                RTC_ALARM_IRQHandler
+                0x0000000008000a9c                DMA_STR0_IRQHandler
+                0x0000000008000a9c                SAI2_IRQHandler
+                0x0000000008000a9c                DMA2_STR3_IRQHandler
+                0x0000000008000a9c                DFSDM1_FLT3_IRQHandler
+                0x0000000008000a9c                USART6_IRQHandler
+                0x0000000008000a9c                BDMA_CH5_IRQHandler
+                0x0000000008000a9c                TIM17_IRQHandler
+                0x0000000008000a9c                BDMA_CH6_IRQHandler
+                0x0000000008000a9c                USART3_IRQHandler
+                0x0000000008000a9c                WKUP_IRQHandler
+                0x0000000008000a9c                CRYP_IRQHandler
+                0x0000000008000a9c                BDMA_CH3_IRQHandler
+                0x0000000008000a9c                LPTIM5_IRQHandler
+                0x0000000008000a9c                LPUART_IRQHandler
+                0x0000000008000a9c                UART5_IRQHandler
+                0x0000000008000a9c                ADC3_IRQHandler
+                0x0000000008000a9c                DMA_STR6_IRQHandler
+                0x0000000008000a9c                TIM4_IRQHandler
+                0x0000000008000a9c                QUADSPI_IRQHandler
+                0x0000000008000a9c                I2C1_EV_IRQHandler
+                0x0000000008000a9c                DMA1_STR7_IRQHandler
+                0x0000000008000a9c                TIM16_IRQHandler
+                0x0000000008000a9c                UART4_IRQHandler
+                0x0000000008000a9c                TIM3_IRQHandler
+                0x0000000008000a9c                RCC_IRQHandler
+                0x0000000008000a9c                TIM8_BRK_TIM12_IRQHandler
+                0x0000000008000a9c                TIM1_TRG_COM_IRQHandler
+                0x0000000008000a9c                Default_Handler
+                0x0000000008000a9c                HRTIM_TIMB_IRQHandler
+                0x0000000008000a9c                CEC_IRQHandler
+                0x0000000008000a9c                EXTI15_10_IRQHandler
+                0x0000000008000a9c                BDMA_CH4_IRQHandler
+                0x0000000008000a9c                DMA_STR3_IRQHandler
+                0x0000000008000a9c                HRTIM_TIME_IRQHandler
+                0x0000000008000a9c                HRTIM1_TIMA_IRQHandler
+                0x0000000008000a9c                SPI5_IRQHandler
+                0x0000000008000a9c                TIM7_IRQHandler
+                0x0000000008000a9c                SDMMC1_IRQHandler
+                0x0000000008000a9c                TIM5_IRQHandler
+                0x0000000008000a9c                SPDIF_IRQHandler
+                0x0000000008000a9c                TIM15_IRQHandler
+                0x0000000008000a9c                I2C3_EV_IRQHandler
+                0x0000000008000a9c                WWDG1_RST_IRQHandler
+                0x0000000008000a9c                EXTI9_5_IRQHandler
+                0x0000000008000a9c                DMA2_STR4_IRQHandler
+                0x0000000008000a9c                RTC_WKUP_IRQHandler
+                0x0000000008000a9c                DMA2_STR6_IRQHandler
+                0x0000000008000a9c                LTDC_IRQHandler
+                0x0000000008000a9c                SAI3_IRQHandler
+                0x0000000008000a9c                ETH_WKUP_IRQHandler
+                0x0000000008000a9c                PVD_PVM_IRQHandler
+                0x0000000008000a9c                SPI2_IRQHandler
+                0x0000000008000a9c                OTG_HS_EP1_IN_IRQHandler
+                0x0000000008000a9c                MemManage_Handler
+                0x0000000008000a9c                DMA2_STR0_IRQHandler
+                0x0000000008000a9c                SVC_Handler
+                0x0000000008000a9c                CRS_IRQHandler
+                0x0000000008000a9c                EXTI4_IRQHandler
+                0x0000000008000a9c                DMAMUX1_OV_IRQHandler
+                0x0000000008000a9c                FDCAN2_IT1_IRQHandler
+                0x0000000008000a9c                DMA_STR4_IRQHandler
+                0x0000000008000a9c                COMP_IRQHandler
+                0x0000000008000a9c                DMA2_STR2_IRQHandler
+                0x0000000008000a9c                ETH_IRQHandler
+                0x0000000008000a9c                TIM1_UP_IRQHandler
+                0x0000000008000a9c                DMA2_STR7_IRQHandler
+                0x0000000008000a9c                OTG_HS_EP1_OUT_IRQHandler
+                0x0000000008000a9c                SPI6_IRQHandler
+                0x0000000008000a9c                MDIOS_IRQHandler
+                0x0000000008000a9c                I2C4_EV_IRQHandler
+                0x0000000008000a9c                FDCAN2_IT0_IRQHandler
+                0x0000000008000a9c                BDMA_CH7_IRQHandler
+                0x0000000008000a9c                FDCAN1_IT0_IRQHandler
+                0x0000000008000a9c                TIM2_IRQHandler
+                0x0000000008000a9c                HSEM0_IRQHandler
+                0x0000000008000a9c                OTG_FS_WKUP_IRQHandler
+                0x0000000008000a9c                OTG_HS_IRQHandler
+                0x0000000008000a9c                DMA2D_IRQHandler
+                0x0000000008000a9c                TIM1_BRK_IRQHandler
+                0x0000000008000a9c                EXTI1_IRQHandler
+                0x0000000008000a9c                OTG_FS_EP1_OUT_IRQHandler
+                0x0000000008000a9c                UART7_IRQHandler
+                0x0000000008000a9c                MDIOS_WKUP_IRQHandler
+                0x0000000008000a9c                USART2_IRQHandler
+                0x0000000008000a9c                DFSDM1_FLT0_IRQHandler
+                0x0000000008000a9c                SAI4_IRQHandler
+                0x0000000008000a9c                I2C2_ER_IRQHandler
+                0x0000000008000a9c                FLASH_IRQHandler
+                0x0000000008000a9c                WWDG1_IRQHandler
+                0x0000000008000a9c                BusFault_Handler
+                0x0000000008000a9c                USART1_IRQHandler
+                0x0000000008000a9c                OTG_FS_IRQHandler
+                0x0000000008000a9c                SPI3_IRQHandler
+                0x0000000008000a9c                OTG_FS_EP1_IN_IRQHandler
+                0x0000000008000a9c                I2C1_ER_IRQHandler
+                0x0000000008000a9c                FMC_IRQHandler
+                0x0000000008000a9c                BDMA_CH1_IRQHandler
+                0x0000000008000a9c                SWPMI1_IRQHandler
+                0x0000000008000a9c                LPTIM1_IRQHandler
+                0x0000000008000a9c                BDMA_CH8_IRQHandler
+                0x0000000008000a9c                TIM_CC_IRQHandler
+                0x0000000008000a9c                I2C4_ER_IRQHandler
+                0x0000000008000a9c                SAI1_IRQHandler
+                0x0000000008000a9c                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
+ .text._ZdlPvj  0x0000000008000a9e        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(del_ops.o)
+                0x0000000008000a9e                operator delete(void*, unsigned int)
+ .text._Znwj    0x0000000008000aa2       0x22 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(new_op.o)
+                0x0000000008000aa2                operator new(unsigned int)
  .text.__cxa_pure_virtual
-                0x0000000008000a50        0x6 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(pure.o)
-                0x0000000008000a50                __cxa_pure_virtual
- .text._ZdlPv   0x0000000008000a56        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(del_op.o)
-                0x0000000008000a56                operator delete(void*)
+                0x0000000008000ac4        0x6 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(pure.o)
+                0x0000000008000ac4                __cxa_pure_virtual
+ .text._ZdlPv   0x0000000008000aca        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(del_op.o)
+                0x0000000008000aca                operator delete(void*)
  .text._ZN10__cxxabiv111__terminateEPFvvE
-                0x0000000008000a5a        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
-                0x0000000008000a5a                __cxxabiv1::__terminate(void (*)())
- *fill*         0x0000000008000a62        0x2 
+                0x0000000008000ace        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
+                0x0000000008000ace                __cxxabiv1::__terminate(void (*)())
+ *fill*         0x0000000008000ad6        0x2 
  .text._ZSt13get_terminatev
-                0x0000000008000a64       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
-                0x0000000008000a64                std::get_terminate()
+                0x0000000008000ad8       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
+                0x0000000008000ad8                std::get_terminate()
  .text._ZSt9terminatev
-                0x0000000008000a74        0xa /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
-                0x0000000008000a74                std::terminate()
- *fill*         0x0000000008000a7e        0x2 
+                0x0000000008000ae8        0xa /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(eh_terminate.o)
+                0x0000000008000ae8                std::terminate()
+ *fill*         0x0000000008000af2        0x2 
  .text._ZSt15get_new_handlerv
-                0x0000000008000a80       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(new_handler.o)
-                0x0000000008000a80                std::get_new_handler()
- .text.abort    0x0000000008000a90        0xe /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-abort.o)
-                0x0000000008000a90                abort
- *fill*         0x0000000008000a9e        0x2 
- .text.__errno  0x0000000008000aa0        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-errno.o)
-                0x0000000008000aa0                __errno
+                0x0000000008000af4       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libstdc++_nano.a(new_handler.o)
+                0x0000000008000af4                std::get_new_handler()
+ .text.abort    0x0000000008000b04        0xe /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-abort.o)
+                0x0000000008000b04                abort
+ *fill*         0x0000000008000b12        0x2 
+ .text.__errno  0x0000000008000b14        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-errno.o)
+                0x0000000008000b14                __errno
  .text.__libc_init_array
-                0x0000000008000aac       0x48 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-init.o)
-                0x0000000008000aac                __libc_init_array
- .text.malloc   0x0000000008000af4       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-malloc.o)
-                0x0000000008000af4                malloc
- .text.free     0x0000000008000b04       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-malloc.o)
-                0x0000000008000b04                free
- .text._free_r  0x0000000008000b14       0x98 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
-                0x0000000008000b14                _free_r
+                0x0000000008000b20       0x48 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-init.o)
+                0x0000000008000b20                __libc_init_array
+ .text.malloc   0x0000000008000b68       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-malloc.o)
+                0x0000000008000b68                malloc
+ .text.free     0x0000000008000b78       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-malloc.o)
+                0x0000000008000b78                free
+ .text._free_r  0x0000000008000b88       0x98 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008000b88                _free_r
  .text.sbrk_aligned
-                0x0000000008000bac       0x40 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008000c20       0x40 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x0000000008000bec       0xe8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000008000bec                _malloc_r
- .text._sbrk_r  0x0000000008000cd4       0x20 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
-                0x0000000008000cd4                _sbrk_r
+                0x0000000008000c60       0xe8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008000c60                _malloc_r
+ .text._sbrk_r  0x0000000008000d48       0x20 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-sbrkr.o)
+                0x0000000008000d48                _sbrk_r
  .text._raise_r
-                0x0000000008000cf4       0x50 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signal.o)
-                0x0000000008000cf4                _raise_r
- .text.raise    0x0000000008000d44       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signal.o)
-                0x0000000008000d44                raise
- .text._kill_r  0x0000000008000d54       0x24 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signalr.o)
-                0x0000000008000d54                _kill_r
+                0x0000000008000d68       0x50 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signal.o)
+                0x0000000008000d68                _raise_r
+ .text.raise    0x0000000008000db8       0x10 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signal.o)
+                0x0000000008000db8                raise
+ .text._kill_r  0x0000000008000dc8       0x24 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signalr.o)
+                0x0000000008000dc8                _kill_r
  .text._getpid_r
-                0x0000000008000d78        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signalr.o)
-                0x0000000008000d78                _getpid_r
+                0x0000000008000dec        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-signalr.o)
+                0x0000000008000dec                _getpid_r
  .text.__malloc_lock
-                0x0000000008000d7c        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
-                0x0000000008000d7c                __malloc_lock
+                0x0000000008000df0        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008000df0                __malloc_lock
  .text.__malloc_unlock
-                0x0000000008000d88        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
-                0x0000000008000d88                __malloc_unlock
+                0x0000000008000dfc        0xc /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-mlock.o)
+                0x0000000008000dfc                __malloc_unlock
  .text.__retarget_lock_acquire_recursive
-                0x0000000008000d94        0x2 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
-                0x0000000008000d94                __retarget_lock_acquire_recursive
+                0x0000000008000e08        0x2 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x0000000008000e08                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0000000008000d96        0x2 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
-                0x0000000008000d96                __retarget_lock_release_recursive
+                0x0000000008000e0a        0x2 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libc_nano.a(lib_a-lock.o)
+                0x0000000008000e0a                __retarget_lock_release_recursive
  *(.glue_7)
- .glue_7        0x0000000008000d98        0x0 linker stubs
+ .glue_7        0x0000000008000e0c        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000d98        0x0 linker stubs
+ .glue_7t       0x0000000008000e0c        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008000d98        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .eh_frame      0x0000000008000e0c        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.init)
- .init          0x0000000008000d98        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0000000008000d98                _init
- .init          0x0000000008000d9c        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x0000000008000e0c        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0000000008000e0c                _init
+ .init          0x0000000008000e10        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x0000000008000da4        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0000000008000da4                _fini
- .fini          0x0000000008000da8        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x0000000008000db0                . = ALIGN (0x4)
-                0x0000000008000db0                _etext = .
+ .fini          0x0000000008000e18        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0000000008000e18                _fini
+ .fini          0x0000000008000e1c        0x8 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x0000000008000e24                . = ALIGN (0x4)
+                0x0000000008000e24                _etext = .
 
-.vfp11_veneer   0x0000000008000db0        0x0
- .vfp11_veneer  0x0000000008000db0        0x0 linker stubs
+.vfp11_veneer   0x0000000008000e24        0x0
+ .vfp11_veneer  0x0000000008000e24        0x0 linker stubs
 
-.v4_bx          0x0000000008000db0        0x0
- .v4_bx         0x0000000008000db0        0x0 linker stubs
+.v4_bx          0x0000000008000e24        0x0
+ .v4_bx         0x0000000008000e24        0x0 linker stubs
 
-.iplt           0x0000000008000db0        0x0
- .iplt          0x0000000008000db0        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x0000000008000e24        0x0
+ .iplt          0x0000000008000e24        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rodata         0x0000000008000db0       0x84
-                0x0000000008000db0                . = ALIGN (0x4)
+.rodata         0x0000000008000e24       0x84
+                0x0000000008000e24                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata._ZTV3App
-                0x0000000008000db0       0x10 ./Src/main.o
-                0x0000000008000db0                vtable for App
+                0x0000000008000e24       0x10 ./Src/main.o
+                0x0000000008000e24                vtable for App
  .rodata._ZTV3Can
-                0x0000000008000dc0       0x14 ./Src/main.o
-                0x0000000008000dc0                vtable for Can
+                0x0000000008000e34       0x14 ./Src/main.o
+                0x0000000008000e34                vtable for Can
  .rodata._ZTV5Timer
-                0x0000000008000dd4       0x14 ./Src/main.o
-                0x0000000008000dd4                vtable for Timer
+                0x0000000008000e48       0x14 ./Src/main.o
+                0x0000000008000e48                vtable for Timer
  .rodata._ZTV3Dio
-                0x0000000008000de8       0x14 ./Src/main.o
-                0x0000000008000de8                vtable for Dio
+                0x0000000008000e5c       0x14 ./Src/main.o
+                0x0000000008000e5c                vtable for Dio
  .rodata._ZTV4Port
-                0x0000000008000dfc        0xc ./Src/main.o
-                0x0000000008000dfc                vtable for Port
+                0x0000000008000e70        0xc ./Src/main.o
+                0x0000000008000e70                vtable for Port
  .rodata._ZTV3Pin
-                0x0000000008000e08        0xc ./Src/main.o
-                0x0000000008000e08                vtable for Pin
+                0x0000000008000e7c        0xc ./Src/main.o
+                0x0000000008000e7c                vtable for Pin
  .rodata._ZTV6Device
-                0x0000000008000e14        0xc ./Src/main.o
-                0x0000000008000e14                vtable for Device
+                0x0000000008000e88        0xc ./Src/main.o
+                0x0000000008000e88                vtable for Device
  .rodata._ZTV3Rcc
-                0x0000000008000e20       0x14 ./Src/rcc.o
-                0x0000000008000e20                vtable for Rcc
-                0x0000000008000e34                . = ALIGN (0x4)
+                0x0000000008000e94       0x14 ./Src/rcc.o
+                0x0000000008000e94                vtable for Rcc
+                0x0000000008000ea8                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008000e34        0x0
- .rel.iplt      0x0000000008000e34        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x0000000008000ea8        0x0
+ .rel.iplt      0x0000000008000ea8        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000000008000e34        0x0
-                0x0000000008000e34                __exidx_start = .
+.ARM            0x0000000008000ea8        0x0
+                0x0000000008000ea8                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008000e34                __exidx_end = .
+                0x0000000008000ea8                __exidx_end = .
 
-.preinit_array  0x0000000008000e34        0x0
-                0x0000000008000e34                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008000ea8        0x0
+                0x0000000008000ea8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008000e34                PROVIDE (__preinit_array_end = .)
+                0x0000000008000ea8                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000008000e34        0x4
-                0x0000000008000e34                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008000ea8        0x4
+                0x0000000008000ea8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008000e34        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
-                0x0000000008000e38                PROVIDE (__init_array_end = .)
+ .init_array    0x0000000008000ea8        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x0000000008000eac                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008000e38        0x4
+.fini_array     0x0000000008000eac        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008000e38        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x0000000008000eac        0x4 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008000e3c                _sidata = LOADADDR (.data)
+                0x0000000008000eb0                _sidata = LOADADDR (.data)
 
-.data           0x0000000024000000       0x68 load address 0x0000000008000e3c
+.data           0x0000000024000000       0x68 load address 0x0000000008000eb0
                 0x0000000024000000                . = ALIGN (0x4)
                 0x0000000024000000                _sdata = .
  *(.data)
@@ -1017,11 +1017,11 @@ LOAD /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x0000000024000068                . = ALIGN (0x4)
                 0x0000000024000068                _edata = .
 
-.igot.plt       0x0000000024000068        0x0 load address 0x0000000008000ea4
+.igot.plt       0x0000000024000068        0x0 load address 0x0000000008000f18
  .igot.plt      0x0000000024000068        0x0 /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.linux64_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 0x0000000024000068                . = ALIGN (0x4)
 
-.bss            0x0000000024000068       0x34 load address 0x0000000008000ea4
+.bss            0x0000000024000068       0x34 load address 0x0000000008000f18
                 0x0000000024000068                _sbss = .
                 0x0000000024000068                __bss_start__ = _sbss
  *(.bss)
@@ -1049,7 +1049,7 @@ LOAD /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externa
                 0x000000002400009c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002400009c      0x604 load address 0x0000000008000ea4
+                0x000000002400009c      0x604 load address 0x0000000008000f18
                 0x00000000240000a0                . = ALIGN (0x8)
  *fill*         0x000000002400009c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -1215,12 +1215,12 @@ LOAD /home/ghita/st/stm32cubeide_1.11.0/plugins/com.st.stm32cube.ide.mcu.externa
  .debug_macro   0x000000000000225d       0xff ./Src/sysmem.o
  .debug_macro   0x000000000000235c      0x23b ./Src/sysmem.o
 
-.debug_line     0x0000000000000000     0x19ed
+.debug_line     0x0000000000000000     0x1a41
  .debug_line    0x0000000000000000      0x75a ./Src/main.o
- .debug_line    0x000000000000075a      0x53b ./Src/rcc.o
- .debug_line    0x0000000000000c95      0x7ef ./Src/syscalls.o
- .debug_line    0x0000000000001484      0x4e5 ./Src/sysmem.o
- .debug_line    0x0000000000001969       0x84 ./Startup/startup_stm32h750vbtx.o
+ .debug_line    0x000000000000075a      0x58f ./Src/rcc.o
+ .debug_line    0x0000000000000ce9      0x7ef ./Src/syscalls.o
+ .debug_line    0x00000000000014d8      0x4e5 ./Src/sysmem.o
+ .debug_line    0x00000000000019bd       0x84 ./Startup/startup_stm32h750vbtx.o
 
 .debug_str      0x0000000000000000    0xec23c
  .debug_str     0x0000000000000000    0xe65ef ./Src/main.o

@@ -48,8 +48,26 @@ void Rcc::Setup(void)
 	reg->CR |= RCC_CR_PLL1ON;
 	while ((reg->CR & RCC_CR_PLL1RDY) != RCC_CR_PLL1RDY);
 
+	/*setup the clock prescalers for bus*/
+	reg->D1CFGR = 0x00;
+	/*D1 domain AHB prescaler*/
+	reg->D1CFGR |= RCC_D1CFGR_HPRE_DIV2;
+	/*D1 domain Core prescaler*/
+	reg->D1CFGR |= RCC_D1CFGR_D1CPRE_DIV1;
+	/*D1 domain APB3 prescaler*/
+	reg->D1CFGR |= RCC_D1CFGR_D1PPRE_DIV2;
+
+	reg->D2CFGR =0x00;
+	/*D2 domain APB1 prescaler*/
+	reg->D2CFGR |= RCC_D2CFGR_D2PPRE1_DIV2;
+	/*D2 domain APB2 prescaler*/
+	reg->D2CFGR |= RCC_D2CFGR_D2PPRE2_DIV2;
+
+	reg->D3CFGR = 0x00;
+	reg->D3CFGR |= RCC_D3CFGR_D3PPRE_DIV2;
+
 	/*select cpu to clock from PLL1*/
-	reg->CFGR |= RCC_CFGR_SW_PLL1 << RCC_CFGR_SW_Pos;
+	reg->CFGR |= RCC_CFGR_SW_PLL1;
 
 }
 
